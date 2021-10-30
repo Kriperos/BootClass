@@ -1,0 +1,102 @@
+/** 
+  Autors: Oskar Owca
+
+  designers: Oskar Owca,
+
+  Whole righs of the code belongs to Oskar Owca
+**/
+
+/**
+   prosty szablon navbara, prosze się nie spodziewać zajebistego wyglądu
+**/
+
+
+/** 
+    znak "*" odnosi się do wszystkich elementów w pliku css, 
+    pozwala uniknąć powtórek kodu i ułatwia prace w css
+**/ 
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    color: black;
+    box-sizing: border-box;
+    /** 
+       text-transform: capitalize będzie nam ułątwiał pisanie, 
+       gdyż każda pierwsza litera tekstu/zdania będzie aotomatycznie duża.
+    **/
+    text-transform: capitalize;
+    list-style: none;
+  }
+
+nav{
+    position: fixed;
+    width: 100%;
+    background: rgb(32, 82, 22);
+    /** 
+         komenda "z-index" ustala pierwszeństwo w wyświetlaniu elementów,
+         używa się jej kiedy elementy się na siebie najeżdżają a nie powinny 
+         przykład: 
+         z-index: 1 = ten będzie miał pierszeństwo nad z-index 0 i bedzię na niego najeżdzał 
+         z-index: 0 = ten natomiast nie ma pierwszenstwa i bedzię sie skrywał pod z-index 1 
+    **/
+    z-index: 1;
+    border-bottom: 1px solid rgb(114, 189, 53) ;
+    /** 
+        komenda "box-shadow" ustawia na elemnet cień. Można je ustawić ile ich potrzeba 
+        Ustawia się się na stępująco: 
+         0 0 0 #fff 
+         dwie pierwsze cyfry oznaczją lokalizacje, 
+         3 cyfra rozmazanie, 
+         i a końcu kolor cienia   
+    **/
+    box-shadow: 0 0 6px rgb(114, 189, 53), 0 0 8px rgb(0, 0, 0), 0 0 18px #bbb;
+}
+nav div{
+    margin-top: 1rem;
+    margin-left: 1.5rem ;
+}
+
+nav div img{
+    width: 7rem;
+    height: 5rem;
+    /** 
+        Komenda "user-select" oznacza co się ma sie stac 
+        gdy użytkownik najedzie lub wybierze dany element 
+        np:
+        user-select: none spowoduję że użytkownik nie będzie mógł nic zrobic z elementem 
+        np. zaznaczyć tekst 
+    **/
+    user-select:none;
+}
+
+
+nav div ul{
+    float: right;
+    position: relative;
+    margin-right: 40px;
+
+}
+
+nav div ul li{  
+    margin-top:.6rem;
+    /**
+       display: inline-block to zwykłe pojączenie "block" i "inline"
+    **/
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+nav div ul li a{
+  font-size: 15pt;
+  text-decoration: none;
+  line-height: 60px;
+  padding: 2px 2px;
+  transition: all 0.5s ease;
+}
+
+nav div ul li a:hover{
+    color: aquamarine;
+}
+
