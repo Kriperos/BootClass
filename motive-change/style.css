@@ -1,0 +1,99 @@
+/** 
+  Autors: Oskar Owca
+
+  designers: Oskar Owca,
+
+  Whole righs of the code belongs to Oskar Owca
+**/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    color: black;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    list-style: none;
+  }
+
+nav{
+    position: fixed;
+    width: 100%;
+    background: rgb(32, 82, 22);
+    z-index: 1;
+    border-bottom: 1px solid rgb(114, 189, 53) ;
+    box-shadow: 0 0 6px rgb(114, 189, 53), 0 0 8px rgb(0, 0, 0), 0 0 18px #bbb;
+}
+nav div{
+    margin-top: 1rem;
+    margin-left: 1.5rem ;
+}
+
+nav div img{
+    width: 7rem;
+    height: 5rem;
+    user-select:none;
+}
+
+
+nav div ul{
+    float: right;
+    position: relative;
+    margin-right: 40px;
+
+}
+
+nav div ul li{  
+    margin-top:.6rem;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+nav div ul li a{
+  font-size: 15pt;
+  text-decoration: none;
+  line-height: 60px;
+  padding: 2px 2px;
+  transition: all 0.5s ease;
+}
+
+nav div ul li a:hover{
+    color: aquamarine;
+}
+
+#icon{
+    /**
+       Do checkboxa dajemy komende "display:none;"
+       ponieważ nie bedziemy checieli by się wyświetlał
+     **/
+    display: none;
+}
+
+#btn{
+
+    color: white;
+    display: block;
+    float: right;
+    margin-top: 2rem;
+    margin-right: 2.5rem;
+    font-size: 24pt;
+}
+
+/**
+   Teraz ustalimy co ma się stać po zaznaczeniu checkboxa
+ **/
+
+ #icon:checked ~ nav{
+    background: rgb(0, 0, 0);
+ }
+
+
+ #icon:checked ~ nav div ul li a{
+     color: white;
+ }
+
+#icon:checked ~ nav div img{
+    box-shadow: 0 0 6px rgb(114, 189, 53), 0 0 8px rgb(0, 0, 0), 0 0 18px rgb(0, 0, 0);
+}
