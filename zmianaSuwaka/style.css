@@ -1,0 +1,20 @@
+/** 
+   ::-webkit-scrollbar odpowiada za konstrukcje suwaka np jego szerokaść
+**/
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+/**
+    ::-webkit-scrollbar-track odpowiada za scieżke po której przesuwa sie thumb
+**/
+::-webkit-scrollbar-track{
+    background: blueviolet;
+}
+
+/**
+   ::-webkit-scrollbar-thumb odpowiada za samą część którą użytkownik przesuwa
+ **/
+::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 0, 0);
+}
