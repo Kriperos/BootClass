@@ -1,0 +1,38 @@
+/** 
+  Autors: Oskar Owca
+
+  designers: Oskar Owca,
+
+  Whole righs of the code belongs to Oskar Owca
+**/
+
+
+/** 
+   Ostrzęgam może zwieszać
+**/
+
+body{
+    overflow: hidden;
+    position:relative;
+    background-image: url(./img/pexels-dmitriy-ganin-7789197.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    animation: slide 10s infinite;
+    background-attachment: fixed;
+}
+
+
+
+@keyframes slide {
+    0%{
+      background-image: url(./img/pexels-sanket-barik-7846563.jpg);
+    }
+  
+    33%{
+      background-image: url(./img/pexels-sanket-barik-7846665.jpg);
+    }
+  
+    67%{
+      background-image: url(./img/pexels-midhun-joseph-9356981.jpg);
+    }
+  }
