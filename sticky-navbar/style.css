@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    color: black;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    list-style: none;
+}
+
+.reklama{
+    width: 100%;
+    background-image: url(./png-logo/coffin\ dance.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    padding-top:71vmin;
+}
+
+.reklama img{
+    margin-left: 1.5rem;
+    width: 9rem;
+    height: 8rem;
+}
+ 
+.navbar{
+    height: 3rem;
+    /** 
+       Komenda "position: sticky" jest podobna do komendy "position:fixed"
+       z tą różnicą że zaczyna działąć kiedy użytkownik przescrolluje stronę.
+       Żeby positon:sticky zadziałała trzeba określić na jakiej wysokości ma się trzymać
+       Ustalamy to komendą top
+    **/
+    position: sticky;
+    top:0;
+    background: rgb(32, 82, 22);
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.navbar ul{
+    float: right;
+    position: relative;
+    margin-right: 40px;
+}
+
+.navbar ul li{  
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.navbar ul li a{
+  font-size: 15pt;
+  text-decoration: none;
+  line-height: 50px;
+  padding: 2px 2px;
+  transition: all 0.5s ease;
+}
+
+.navbar ul li a:hover{
+    color: aquamarine;
+}
