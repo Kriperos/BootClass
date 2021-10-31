@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    text-transform: capitalize;
+    list-style: none;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    background: rgb(32, 82, 22);
+    z-index: 1;
+    border-bottom: 1px solid rgb(114, 189, 53) ;
+    box-shadow:  0 0 6px rgb(114, 189, 53), 0 0 8px rgb(0, 0, 0), 0 0 18px #bbb;
+}
+
+nav div img{
+    width: 7rem;
+    height: 5rem;
+    user-select:none;
+}
+
+nav div ul{
+    float: right;
+    position: relative;
+    margin-right: 40px;
+
+}
+
+nav div ul li{  
+    margin-top:1rem;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+nav div ul li a{
+  font-size: 15pt;
+  text-decoration: none;
+  line-height: 60px;
+  padding: 2px 2px;
+  transition: all 0.5s ease;
+}
+
+nav div ul li a:hover{
+    color: aquamarine;
+}
+
+.sidebar{
+    background:rgb(32, 82, 22);
+    padding-top: 1.875rem;
+    position: fixed;
+    left:0;
+    width:15.625rem;
+    height:100%;   
+}
+.sidebar .Profile_image{
+    width:6.25rem;
+    height:6.25rem;
+    border-radius:100px;
+    margin-bottom: 0.625rem;
+    margin-left:30%;
+}
+.sidebar h4{
+    color:#ccc;
+    margin-top:0;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+.sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height:3.75rem;
+    text-decoration: none;
+    padding-left:40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property:background;
+}
+.sidebar a:hover{
+    background:rgb(13, 156, 109);
+}
+.sidebar i{
+    padding-right:10px;
+}
