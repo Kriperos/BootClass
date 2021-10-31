@@ -62,6 +62,15 @@ nav div ul li a:hover{
     color: aquamarine;
 }
 
+#btn{
+    color: aquamarine;
+    display:none;
+    float: right;
+    margin-top: 2rem;
+    margin-right: 2.5rem;
+    font-size: 24pt;
+}
+
 /**
    By zrobić responsywne menu trzeba będzię 
    użyc komendy "@media" i określić kiedy ma się wykonać
@@ -69,19 +78,18 @@ nav div ul li a:hover{
 
  @media (max-width: 760px) {
     nav div img{
-        width: 5rem;
-        height: 4rem;
+        width: 6rem;
+        height: 5rem;
     }
     nav div ul{
-        margin-right: 20px;
+       display: none;
     
     }
-    
-    nav div ul li{  
-        margin-top:.4rem;
-    } 
-    
-    nav div ul li a{
-      font-size: 13pt;
+
+    #btn{
+        display: block;
     }
  }
+
+ 
+
